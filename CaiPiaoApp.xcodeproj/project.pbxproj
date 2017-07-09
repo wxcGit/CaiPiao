@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9294ACBAB80103213E966A1E /* libPods-CaiPiaoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6FFA0F670246B0623C1539 /* libPods-CaiPiaoApp.a */; };
+		FC39F3FC1F108A9A00BF300C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39F3FB1F108A9A00BF300C /* main.m */; };
+		FC39F3FF1F108A9A00BF300C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39F3FE1F108A9A00BF300C /* AppDelegate.m */; };
+		FC39F4021F108A9A00BF300C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39F4011F108A9A00BF300C /* ViewController.m */; };
+		FC39F4051F108A9A00BF300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC39F4031F108A9A00BF300C /* Main.storyboard */; };
+		FC39F4071F108A9A00BF300C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC39F4061F108A9A00BF300C /* Assets.xcassets */; };
+		FC39F40A1F108A9A00BF300C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC39F4081F108A9A00BF300C /* LaunchScreen.storyboard */; };
+		FC8B91021F10BF3C004A0933 /* TKTabControllerIniter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B91011F10BF3C004A0933 /* TKTabControllerIniter.m */; };
+		FC8B91081F10BF9D004A0933 /* UIViewController+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B91071F10BF9D004A0933 /* UIViewController+Refresh.m */; };
+		FC8B910B1F10C001004A0933 /* UIColor+theme.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B910A1F10C001004A0933 /* UIColor+theme.m */; };
+		FC8B91101F10C2B7004A0933 /* CPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B910F1F10C2B7004A0933 /* CPNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		431353601450925F5294D150 /* Pods-CaiPiaoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaiPiaoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6FFA0F670246B0623C1539 /* libPods-CaiPiaoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaiPiaoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC39F3F71F108A9A00BF300C /* CaiPiaoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaiPiaoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC39F3FB1F108A9A00BF300C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC39F3FD1F108A9A00BF300C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC39F3FE1F108A9A00BF300C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC39F4001F108A9A00BF300C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC39F4011F108A9A00BF300C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC39F4041F108A9A00BF300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC39F4061F108A9A00BF300C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC39F4091F108A9A00BF300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC39F40B1F108A9A00BF300C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8B91001F10BF3C004A0933 /* TKTabControllerIniter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTabControllerIniter.h; sourceTree = "<group>"; };
+		FC8B91011F10BF3C004A0933 /* TKTabControllerIniter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTabControllerIniter.m; sourceTree = "<group>"; };
+		FC8B91061F10BF9D004A0933 /* UIViewController+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Refresh.h"; sourceTree = "<group>"; };
+		FC8B91071F10BF9D004A0933 /* UIViewController+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Refresh.m"; sourceTree = "<group>"; };
+		FC8B91091F10C001004A0933 /* UIColor+theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+theme.h"; sourceTree = "<group>"; };
+		FC8B910A1F10C001004A0933 /* UIColor+theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+theme.m"; sourceTree = "<group>"; };
+		FC8B910C1F10C04C004A0933 /* CaiPiao.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaiPiao.pch; sourceTree = "<group>"; };
+		FC8B910E1F10C2B7004A0933 /* CPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNavigationController.h; sourceTree = "<group>"; };
+		FC8B910F1F10C2B7004A0933 /* CPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNavigationController.m; sourceTree = "<group>"; };
+		FEAAA1A68C811D174FF149C6 /* Pods-CaiPiaoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaiPiaoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC39F3F41F108A9A00BF300C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9294ACBAB80103213E966A1E /* libPods-CaiPiaoApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C52FD5B0F8CB2CF247A6B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FFA0F670246B0623C1539 /* libPods-CaiPiaoApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91332563A250C01BE462A8F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				431353601450925F5294D150 /* Pods-CaiPiaoApp.debug.xcconfig */,
+				FEAAA1A68C811D174FF149C6 /* Pods-CaiPiaoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC39F3EE1F108A9A00BF300C = {
+			isa = PBXGroup;
+			children = (
+				FC39F3F91F108A9A00BF300C /* CaiPiaoApp */,
+				FC39F3F81F108A9A00BF300C /* Products */,
+				91332563A250C01BE462A8F5 /* Pods */,
+				2C52FD5B0F8CB2CF247A6B64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC39F3F81F108A9A00BF300C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC39F3F71F108A9A00BF300C /* CaiPiaoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC39F3F91F108A9A00BF300C /* CaiPiaoApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC39F41A1F108F2C00BF300C /* Common */,
+				FC39F4141F108F1F00BF300C /* Manager */,
+				FC39F4151F108F1F00BF300C /* Network */,
+				FC39F4161F108F1F00BF300C /* Pages */,
+				FC39F4171F108F1F00BF300C /* Thirdparty */,
+				FC39F4181F108F1F00BF300C /* Tools */,
+				FC39F4191F108F1F00BF300C /* Util */,
+				FC39F3FD1F108A9A00BF300C /* AppDelegate.h */,
+				FC39F3FE1F108A9A00BF300C /* AppDelegate.m */,
+				FC39F4001F108A9A00BF300C /* ViewController.h */,
+				FC39F4011F108A9A00BF300C /* ViewController.m */,
+				FC39F4031F108A9A00BF300C /* Main.storyboard */,
+				FC39F4061F108A9A00BF300C /* Assets.xcassets */,
+				FC39F4081F108A9A00BF300C /* LaunchScreen.storyboard */,
+				FC39F40B1F108A9A00BF300C /* Info.plist */,
+				FC39F3FA1F108A9A00BF300C /* Supporting Files */,
+			);
+			path = CaiPiaoApp;
+			sourceTree = "<group>";
+		};
+		FC39F3FA1F108A9A00BF300C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC39F3FB1F108A9A00BF300C /* main.m */,
+				FC8B910C1F10C04C004A0933 /* CaiPiao.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC39F4141F108F1F00BF300C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FC39F4151F108F1F00BF300C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FC39F4161F108F1F00BF300C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		FC39F4171F108F1F00BF300C /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		FC39F4181F108F1F00BF300C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B91061F10BF9D004A0933 /* UIViewController+Refresh.h */,
+				FC8B91071F10BF9D004A0933 /* UIViewController+Refresh.m */,
+				FC8B91001F10BF3C004A0933 /* TKTabControllerIniter.h */,
+				FC8B91011F10BF3C004A0933 /* TKTabControllerIniter.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FC39F4191F108F1F00BF300C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FC39F41A1F108F2C00BF300C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B910D1F10C29E004A0933 /* Controller */,
+				FC8B91091F10C001004A0933 /* UIColor+theme.h */,
+				FC8B910A1F10C001004A0933 /* UIColor+theme.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FC8B910D1F10C29E004A0933 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B910E1F10C2B7004A0933 /* CPNavigationController.h */,
+				FC8B910F1F10C2B7004A0933 /* CPNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC39F3F61F108A9A00BF300C /* CaiPiaoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC39F40E1F108A9A00BF300C /* Build configuration list for PBXNativeTarget "CaiPiaoApp" */;
+			buildPhases = (
+				78B70126CC74AA4081F2300E /* [CP] Check Pods Manifest.lock */,
+				FC39F3F31F108A9A00BF300C /* Sources */,
+				FC39F3F41F108A9A00BF300C /* Frameworks */,
+				FC39F3F51F108A9A00BF300C /* Resources */,
+				8CFDDA18759137CAD6DB6036 /* [CP] Embed Pods Frameworks */,
+				82B070CD188E270837C66891 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaiPiaoApp;
+			productName = CaiPiaoApp;
+			productReference = FC39F3F71F108A9A00BF300C /* CaiPiaoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC39F3EF1F108A9A00BF300C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "王学超";
+				TargetAttributes = {
+					FC39F3F61F108A9A00BF300C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC39F3F21F108A9A00BF300C /* Build configuration list for PBXProject "CaiPiaoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC39F3EE1F108A9A00BF300C;
+			productRefGroup = FC39F3F81F108A9A00BF300C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC39F3F61F108A9A00BF300C /* CaiPiaoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC39F3F51F108A9A00BF300C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC39F40A1F108A9A00BF300C /* LaunchScreen.storyboard in Resources */,
+				FC39F4071F108A9A00BF300C /* Assets.xcassets in Resources */,
+				FC39F4051F108A9A00BF300C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78B70126CC74AA4081F2300E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82B070CD188E270837C66891 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFDDA18759137CAD6DB6036 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC39F3F31F108A9A00BF300C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC39F4021F108A9A00BF300C /* ViewController.m in Sources */,
+				FC39F3FF1F108A9A00BF300C /* AppDelegate.m in Sources */,
+				FC39F3FC1F108A9A00BF300C /* main.m in Sources */,
+				FC8B910B1F10C001004A0933 /* UIColor+theme.m in Sources */,
+				FC8B91101F10C2B7004A0933 /* CPNavigationController.m in Sources */,
+				FC8B91021F10BF3C004A0933 /* TKTabControllerIniter.m in Sources */,
+				FC8B91081F10BF9D004A0933 /* UIViewController+Refresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC39F4031F108A9A00BF300C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC39F4041F108A9A00BF300C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC39F4081F108A9A00BF300C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC39F4091F108A9A00BF300C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC39F40C1F108A9A00BF300C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC39F40D1F108A9A00BF300C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC39F40F1F108A9A00BF300C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431353601450925F5294D150 /* Pods-CaiPiaoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CaiPiaoApp/CaiPiao.pch;
+				INFOPLIST_FILE = CaiPiaoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wxc.CaiPiaoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC39F4101F108A9A00BF300C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAAA1A68C811D174FF149C6 /* Pods-CaiPiaoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CaiPiaoApp/CaiPiao.pch;
+				INFOPLIST_FILE = CaiPiaoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wxc.CaiPiaoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC39F3F21F108A9A00BF300C /* Build configuration list for PBXProject "CaiPiaoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC39F40C1F108A9A00BF300C /* Debug */,
+				FC39F40D1F108A9A00BF300C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC39F40E1F108A9A00BF300C /* Build configuration list for PBXNativeTarget "CaiPiaoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC39F40F1F108A9A00BF300C /* Debug */,
+				FC39F4101F108A9A00BF300C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC39F3EF1F108A9A00BF300C /* Project object */;
+}

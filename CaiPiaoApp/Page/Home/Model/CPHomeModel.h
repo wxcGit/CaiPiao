@@ -7,7 +7,24 @@
 //
 
 #import <JSONModel/JSONModel.h>
+@protocol CPHomeResultModel<NSObject>
 
-@interface CPHomeModel : JSONModel
+@end
+
+
+@interface  CPHomeResultModel  : JSONModel
+
+@property (nonatomic, copy, nullable)   NSString * caipiaoid;
+@property (nonatomic, copy, nullable)   NSString * name;
+@property (nonatomic, copy, nullable)   NSString * parentid;
+
+@end
+
+
+@interface  CPHomeModel  : JSONModel
+
+@property (nonatomic, copy, nullable)   NSString * status;
+@property (nonatomic, copy, nullable)   NSString * msg;
+@property (nonatomic, strong, nullable) NSArray<CPHomeResultModel> * result;
 
 @end

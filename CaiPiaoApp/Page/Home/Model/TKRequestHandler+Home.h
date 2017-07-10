@@ -12,6 +12,6 @@
 
 @interface TKRequestHandler (Home)
 
-- (NSURLSessionDataTask*)getHomeDatafinish:(void (^)(NSURLSessionDataTask *, CPHomeModel *, NSError *))finish;
+- (NSURLSessionDataTask*)getHomeDatafinish:(void (^)(NSURLSessionDataTask *sessionDataTask, CPHomeModel *model , NSError *error))finish;
 
 @end

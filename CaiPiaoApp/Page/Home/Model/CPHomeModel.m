@@ -8,6 +8,23 @@
 
 #import "CPHomeModel.h"
 
-@implementation CPHomeModel
+@implementation  CPHomeModel
+
++(BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
+}
+
+@end
+
+
+@implementation  CPHomeResultModel
+
+
+
++(BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
+}
 
 @end

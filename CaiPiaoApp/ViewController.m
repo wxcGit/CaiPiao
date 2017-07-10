@@ -19,17 +19,19 @@
     [super viewDidLoad];
     
     [self initTabItem];
+    
+    self.tabBar.barTintColor = [UIColor whiteColor];
 }
 
 - (void)initTabItem{
     
-    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CSRollViewController" title:@"Telegraph" tabImageName:@"tab_live_normal" selectedImageName:@"tab_live_selected"];
+    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"首页" tabImageName:@"tab_live_normal" selectedImageName:@"tab_live_selected"];
     
-    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CSConsultViewController" title:@"Read" tabImageName:@"tab_ref_normal" selectedImageName:@"tab_ref_selected"];
+    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"开奖" tabImageName:@"tab_ref_normal" selectedImageName:@"tab_ref_selected"];
 
-    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CSMarketViewController" title:@"Markets" tabImageName:@"tab_market_normal" selectedImageName:@"tab_market_selected"];
+    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"查询" tabImageName:@"tab_market_normal" selectedImageName:@"tab_market_selected"];
 
-    TKTabControllerItem *moreViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CSMyCenterViewController" title:@"Me" tabImageName:@"tab_me_normal" selectedImageName:@"tab_me_selected"];
+    TKTabControllerItem *moreViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"我的" tabImageName:@"tab_me_normal" selectedImageName:@"tab_me_selected"];
     
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:rollViewItem,consultViewItem,marketViewItem,moreViewItem, nil];
     

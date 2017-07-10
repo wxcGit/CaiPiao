@@ -7,9 +7,10 @@ pod "AFNetworking", "~> 2.6.3"
 pod 'Masonry'
 pod 'SDWebImage'
 pod 'JSONModel'
-pod 'UMengAnalytics-NO-IDFA'
+pod 'UMeng'
 pod 'SVProgressHUD'
 pod 'BmobSDK'
+pod 'JPush'
 
 
 end

@@ -22,34 +22,40 @@ PODS:
     - AFNetworking/NSURLSession
   - BmobSDK (2.2.0):
     - WechatOpenSDK (~> 1.7.7)
+  - JCore (1.1.5)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
   - JSONModel (1.7.0)
   - Masonry (1.0.2)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
-  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMeng (2.2.1)
   - WechatOpenSDK (1.7.8)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.3)
   - BmobSDK
+  - JPush
   - JSONModel
   - Masonry
   - SDWebImage
   - SVProgressHUD
-  - UMengAnalytics-NO-IDFA
+  - UMeng
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   BmobSDK: d2f705187e7baafc89dea0c4ba3953549aae4625
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMeng: a4fe3231efeb223015d9649e92538dd16a92685f
   WechatOpenSDK: ad1e7be1b66416df847ac50830c798b70c9e365e
 
-PODFILE CHECKSUM: 40dc6a8e9cb4a3fbc65252bb906fe04f6d785512
+PODFILE CHECKSUM: beff1e6ac343107e93c0307d3126ad186c8ea927
 
 COCOAPODS: 1.2.1

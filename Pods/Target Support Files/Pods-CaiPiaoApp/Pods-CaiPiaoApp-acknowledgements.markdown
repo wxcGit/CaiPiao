@@ -46,6 +46,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## JCore
+
+Copyright jpush.cn
+
+## JPush
+
+Copyright jpush.cn
+
 ## JSONModel
 
 Copyright (c) 2012-2016 Marin Todorov and JSONModel contributors
@@ -144,10 +152,9 @@ including Freepik Icons. Please consult their
 respective headers for the terms of their individual licenses.
 
 
-## UMengAnalytics-NO-IDFA
+## UMeng
 
-Copyright 2011 - 2015 UMeng.com. All rights reserved.
-
+LICENSE Copyright 2009 - 2012 UMeng.com, Inc. All rights reserved.
 
 ## WechatOpenSDK
 

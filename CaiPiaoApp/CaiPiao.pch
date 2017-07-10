@@ -9,10 +9,19 @@
 #ifndef CaiPiao_pch
 #define CaiPiao_pch
 
+//是否展示广告
+#define BMOB_SHOW @"BMOB_SHOW"
+#define Gato_Bmob_SHOW [[NSUserDefaults standardUserDefaults] objectForKey:BMOB_SHOW]
+
+//跳转网页
+#define BMOB_URL @"BMOB_URL"
+#define Gato_Bmob_URL [[NSUserDefaults standardUserDefaults] objectForKey:BMOB_URL]
+
 #ifdef __OBJC__
 
 
 #import "UIColor+theme.h"
+#import "TKDefines.h"
 
 #endif //__OBJC__
 

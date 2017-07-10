@@ -22,6 +22,7 @@
 
 #import "UIColor+theme.h"
 #import "TKDefines.h"
+#import <JSONAPI.h>
 
 #endif //__OBJC__
 

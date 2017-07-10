@@ -10,4 +10,6 @@
 
 @interface CPBaseTableViewController : CPBaseViewController
 
+@property (nonatomic, strong, readonly) UITableView *tableView;
+
 @end

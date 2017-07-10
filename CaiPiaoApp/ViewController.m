@@ -25,7 +25,7 @@
 
 - (void)initTabItem{
     
-    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"首页" tabImageName:@"home_nor" selectedImageName:@"home_sel"];
+    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPHomeViewController" title:@"首页" tabImageName:@"home_nor" selectedImageName:@"home_sel"];
     
     TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"开奖" tabImageName:@"reward_nor" selectedImageName:@"reward_sel"];
 

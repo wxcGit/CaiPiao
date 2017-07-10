@@ -25,13 +25,13 @@
 
 - (void)initTabItem{
     
-    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"首页" tabImageName:@"tab_live_normal" selectedImageName:@"tab_live_selected"];
+    TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"首页" tabImageName:@"home_nor" selectedImageName:@"home_sel"];
     
-    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"开奖" tabImageName:@"tab_ref_normal" selectedImageName:@"tab_ref_selected"];
+    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"开奖" tabImageName:@"reward_nor" selectedImageName:@"reward_sel"];
 
-    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"查询" tabImageName:@"tab_market_normal" selectedImageName:@"tab_market_selected"];
+    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"查询" tabImageName:@"search_nor" selectedImageName:@"search_sel"];
 
-    TKTabControllerItem *moreViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"我的" tabImageName:@"tab_me_normal" selectedImageName:@"tab_me_selected"];
+    TKTabControllerItem *moreViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"我的" tabImageName:@"min_nor" selectedImageName:@"min_sel"];
     
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:rollViewItem,consultViewItem,marketViewItem,moreViewItem, nil];
     

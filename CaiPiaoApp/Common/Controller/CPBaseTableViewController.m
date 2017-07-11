@@ -25,6 +25,7 @@
 - (void)setupUI
 {
     [self.view addSubview:self.tableView];
+    self.tableView.backgroundColor = [UIColor backGroundColor];
 }
 
 - (UITableView*)tableView

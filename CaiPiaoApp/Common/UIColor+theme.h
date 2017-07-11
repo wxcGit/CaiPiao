@@ -19,4 +19,35 @@
 //tab select
 + (UIColor*)tabSelectColor;
 
++(UIColor *)themeRedColor;
+
++(UIColor *)themeNaviRedColor;
+
++(UIColor *)themeNaviWhiteColor;
+
++(UIColor *)themeNaviBlackColor;
+
++(UIColor *)themeBlackColor;
+
++(UIColor *)themeMiddleBlackColor;
+
++(UIColor *)themeLightBlackColor;
+
++(UIColor *)themeGrayColor;
+
++(UIColor *)themeLightGrayColor;
+
+//时间、阅读数
++(UIColor *)themeLightGray1Color;
+//新闻分隔线
++(UIColor *)themeLightGray2Color;
+
++(UIColor *)themeLightGray3Color;
+
++(UIColor *)themeOrangeColor;
+
++(UIColor *)themeBackgroundColor;
+
++(UIColor *)themeSplitLineColor;
+
 @end

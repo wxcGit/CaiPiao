@@ -19,12 +19,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadData];
+    
+    __weak typeof(self) wSelf = self;
+    [self addHeaderRefreshView:self.tableView callBack:^{
+        [wSelf loadData];
+    }];
 }
 
 - (void)loadData
 {
     __weak typeof(self) wSelf = self;
     [[TKRequestHandler sharedInstance]getHomeDatafinish:^(NSURLSessionDataTask * _Nonnull task, CPHomeModel * _Nullable model, NSError * _Nullable error) {
+        [wSelf stopRefresh:wSelf.tableView];
         [wSelf.tableView reloadData];
     }];
 }

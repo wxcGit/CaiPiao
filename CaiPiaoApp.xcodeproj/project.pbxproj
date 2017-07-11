@@ -61,6 +61,7 @@
 		FCDA60901F13BBC200371463 /* NSString+TKSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60861F13BBC200371463 /* NSString+TKSize.m */; };
 		FCDA60911F13BBC200371463 /* NSString+ValidateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60881F13BBC200371463 /* NSString+ValidateFormat.m */; };
 		FCDA60921F13BBC200371463 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA608A1F13BBC200371463 /* UIColor+Util.m */; };
+		FCDA60961F147B8B00371463 /* UIBarButtonItem+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60951F147B8B00371463 /* UIBarButtonItem+Navigation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,6 +173,9 @@
 		FCDA60881F13BBC200371463 /* NSString+ValidateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ValidateFormat.m"; sourceTree = "<group>"; };
 		FCDA60891F13BBC200371463 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
 		FCDA608A1F13BBC200371463 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		FCDA60941F147B8B00371463 /* UIBarButtonItem+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Navigation.h"; sourceTree = "<group>"; };
+		FCDA60951F147B8B00371463 /* UIBarButtonItem+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Navigation.m"; sourceTree = "<group>"; };
+		FCDA60971F147C4000371463 /* FADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADefines.h; sourceTree = "<group>"; };
 		FEAAA1A68C811D174FF149C6 /* Pods-CaiPiaoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaiPiaoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +287,7 @@
 		FC39F41A1F108F2C00BF300C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FCDA60971F147C4000371463 /* FADefines.h */,
 				FCDA607A1F13BBC200371463 /* Category */,
 				FC8B910D1F10C29E004A0933 /* Controller */,
 				FC8B91091F10C001004A0933 /* UIColor+theme.h */,
@@ -507,6 +512,8 @@
 		FCDA607A1F13BBC200371463 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FCDA60941F147B8B00371463 /* UIBarButtonItem+Navigation.h */,
+				FCDA60951F147B8B00371463 /* UIBarButtonItem+Navigation.m */,
 				FCDA607B1F13BBC200371463 /* NSAttributedString+TKSize.h */,
 				FCDA607C1F13BBC200371463 /* NSAttributedString+TKSize.m */,
 				FCDA607D1F13BBC200371463 /* NSDate+Category.h */,
@@ -670,6 +677,7 @@
 				FCCFD10E1F1331AF00A3094C /* MJRefreshComponent.m in Sources */,
 				FCCFD1111F1331AF00A3094C /* MJRefreshAutoGifFooter.m in Sources */,
 				FCDA608F1F13BBC200371463 /* NSString+MD5.m in Sources */,
+				FCDA60961F147B8B00371463 /* UIBarButtonItem+Navigation.m in Sources */,
 				FCCFD1181F1331AF00A3094C /* MJRefreshNormalHeader.m in Sources */,
 				FCDA60911F13BBC200371463 /* NSString+ValidateFormat.m in Sources */,
 				FCCFD11C1F1331AF00A3094C /* UIScrollView+MJExtension.m in Sources */,

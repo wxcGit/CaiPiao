@@ -7,7 +7,6 @@
 //
 
 #import "CPBaseViewController.h"
-#import "UIScrollView+MJRefresh.h"
 
 @interface CPBaseViewController ()
 
@@ -19,6 +18,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor backGroundColor];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void)didReceiveMemoryWarning {

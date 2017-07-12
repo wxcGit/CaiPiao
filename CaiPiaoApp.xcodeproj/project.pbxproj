@@ -62,6 +62,11 @@
 		FCDA60911F13BBC200371463 /* NSString+ValidateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60881F13BBC200371463 /* NSString+ValidateFormat.m */; };
 		FCDA60921F13BBC200371463 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA608A1F13BBC200371463 /* UIColor+Util.m */; };
 		FCDA60961F147B8B00371463 /* UIBarButtonItem+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60951F147B8B00371463 /* UIBarButtonItem+Navigation.m */; };
+		FCDA60C01F15D6E900371463 /* xinwenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60BA1F15D6E900371463 /* xinwenTableViewCell.m */; };
+		FCDA60C11F15D6E900371463 /* xinwenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDA60BB1F15D6E900371463 /* xinwenTableViewCell.xib */; };
+		FCDA60C21F15D6E900371463 /* CPXinwenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60BD1F15D6E900371463 /* CPXinwenViewController.m */; };
+		FCDA60C31F15D6E900371463 /* xinwenWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60BF1F15D6E900371463 /* xinwenWebViewController.m */; };
+		FCDA60CB1F15DA0100371463 /* xinwenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA60CA1F15DA0100371463 /* xinwenModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +181,15 @@
 		FCDA60941F147B8B00371463 /* UIBarButtonItem+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Navigation.h"; sourceTree = "<group>"; };
 		FCDA60951F147B8B00371463 /* UIBarButtonItem+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Navigation.m"; sourceTree = "<group>"; };
 		FCDA60971F147C4000371463 /* FADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADefines.h; sourceTree = "<group>"; };
+		FCDA60B91F15D6E900371463 /* xinwenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinwenTableViewCell.h; sourceTree = "<group>"; };
+		FCDA60BA1F15D6E900371463 /* xinwenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinwenTableViewCell.m; sourceTree = "<group>"; };
+		FCDA60BB1F15D6E900371463 /* xinwenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xinwenTableViewCell.xib; sourceTree = "<group>"; };
+		FCDA60BC1F15D6E900371463 /* CPXinwenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPXinwenViewController.h; sourceTree = "<group>"; };
+		FCDA60BD1F15D6E900371463 /* CPXinwenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPXinwenViewController.m; sourceTree = "<group>"; };
+		FCDA60BE1F15D6E900371463 /* xinwenWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinwenWebViewController.h; sourceTree = "<group>"; };
+		FCDA60BF1F15D6E900371463 /* xinwenWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinwenWebViewController.m; sourceTree = "<group>"; };
+		FCDA60C91F15DA0100371463 /* xinwenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinwenModel.h; sourceTree = "<group>"; };
+		FCDA60CA1F15DA0100371463 /* xinwenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinwenModel.m; sourceTree = "<group>"; };
 		FEAAA1A68C811D174FF149C6 /* Pods-CaiPiaoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaiPiaoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaiPiaoApp/Pods-CaiPiaoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -426,6 +440,7 @@
 		FCCFD1341F13A09100A3094C /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				FCDA60B71F15D6E900371463 /* 新闻 */,
 				FCCFD13B1F13B72700A3094C /* Home */,
 				FCCFD1351F13A09100A3094C /* H5 */,
 			);
@@ -534,6 +549,38 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		FCDA60B71F15D6E900371463 /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				FCDA60C81F15DA0100371463 /* Model */,
+				FCDA60B81F15D6E900371463 /* cell */,
+				FCDA60BC1F15D6E900371463 /* CPXinwenViewController.h */,
+				FCDA60BD1F15D6E900371463 /* CPXinwenViewController.m */,
+				FCDA60BE1F15D6E900371463 /* xinwenWebViewController.h */,
+				FCDA60BF1F15D6E900371463 /* xinwenWebViewController.m */,
+			);
+			path = "新闻";
+			sourceTree = "<group>";
+		};
+		FCDA60B81F15D6E900371463 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FCDA60B91F15D6E900371463 /* xinwenTableViewCell.h */,
+				FCDA60BA1F15D6E900371463 /* xinwenTableViewCell.m */,
+				FCDA60BB1F15D6E900371463 /* xinwenTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		FCDA60C81F15DA0100371463 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCDA60C91F15DA0100371463 /* xinwenModel.h */,
+				FCDA60CA1F15DA0100371463 /* xinwenModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -601,6 +648,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDA60C11F15D6E900371463 /* xinwenTableViewCell.xib in Resources */,
 				FC39F40A1F108A9A00BF300C /* LaunchScreen.storyboard in Resources */,
 				FCCFD13A1F13A09100A3094C /* H5ViewController.xib in Resources */,
 				FC39F4071F108A9A00BF300C /* Assets.xcassets in Resources */,
@@ -670,12 +718,14 @@
 				FC39F4021F108A9A00BF300C /* ViewController.m in Sources */,
 				FCCFD10F1F1331AF00A3094C /* MJRefreshFooter.m in Sources */,
 				FCCFD1131F1331AF00A3094C /* MJRefreshAutoStateFooter.m in Sources */,
+				FCDA60C01F15D6E900371463 /* xinwenTableViewCell.m in Sources */,
 				FCCFD1241F1333F500A3094C /* CPBaseTableViewController.m in Sources */,
 				FCDA60741F13B8AD00371463 /* TKRequestHelper.m in Sources */,
 				FCCFD12C1F13363400A3094C /* SAMTextView.m in Sources */,
 				FC39F3FF1F108A9A00BF300C /* AppDelegate.m in Sources */,
 				FCCFD10E1F1331AF00A3094C /* MJRefreshComponent.m in Sources */,
 				FCCFD1111F1331AF00A3094C /* MJRefreshAutoGifFooter.m in Sources */,
+				FCDA60CB1F15DA0100371463 /* xinwenModel.m in Sources */,
 				FCDA608F1F13BBC200371463 /* NSString+MD5.m in Sources */,
 				FCDA60961F147B8B00371463 /* UIBarButtonItem+Navigation.m in Sources */,
 				FCCFD1181F1331AF00A3094C /* MJRefreshNormalHeader.m in Sources */,
@@ -685,9 +735,11 @@
 				FCDA605D1F13B80C00371463 /* TKRequestHandler+Home.m in Sources */,
 				FCCFD1151F1331AF00A3094C /* MJRefreshBackNormalFooter.m in Sources */,
 				FCCFD11B1F1331AF00A3094C /* MJRefreshConst.m in Sources */,
+				FCDA60C31F15D6E900371463 /* xinwenWebViewController.m in Sources */,
 				FCDA60901F13BBC200371463 /* NSString+TKSize.m in Sources */,
 				FCCFD1121F1331AF00A3094C /* MJRefreshAutoNormalFooter.m in Sources */,
 				FCDA60751F13B8AD00371463 /* TKResponseError.m in Sources */,
+				FCDA60C21F15D6E900371463 /* CPXinwenViewController.m in Sources */,
 				FCCFD1161F1331AF00A3094C /* MJRefreshBackStateFooter.m in Sources */,
 				FCDA608E1F13BBC200371463 /* NSString+Encode.m in Sources */,
 				FCDA60711F13B8AD00371463 /* TKNetworkManager.m in Sources */,

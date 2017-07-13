@@ -8,6 +8,7 @@
 
 #import "CPHomeViewController.h"
 #import "TKRequestHandler+Home.h"
+#import "CPNewsTableViewCell.h"
 
 @interface CPHomeViewController ()
 
@@ -16,6 +17,7 @@
 @implementation CPHomeViewController
 
 - (void)viewDidLoad {
+    self.customBackItem = NO;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadData];
@@ -38,6 +40,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark TableView
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
 }
 
 /*

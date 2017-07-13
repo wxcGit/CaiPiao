@@ -27,9 +27,9 @@
     
     TKTabControllerItem *rollViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPHomeViewController" title:@"首页" tabImageName:@"home_nor" selectedImageName:@"home_sel"];
     
-    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"开奖" tabImageName:@"reward_nor" selectedImageName:@"reward_sel"];
+    TKTabControllerItem *consultViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPNewsViewController" title:@"资讯" tabImageName:@"reward_nor" selectedImageName:@"reward_sel"];
 
-    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"查询" tabImageName:@"search_nor" selectedImageName:@"search_sel"];
+    TKTabControllerItem *marketViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPMapViewController" title:@"附近" tabImageName:@"search_nor" selectedImageName:@"search_sel"];
 
     TKTabControllerItem *moreViewItem = [[TKTabControllerItem alloc] initWithControllerName:@"CPBaseViewController" title:@"我的" tabImageName:@"min_nor" selectedImageName:@"min_sel"];
     

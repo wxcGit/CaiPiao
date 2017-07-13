@@ -13,7 +13,7 @@
 +(UIBarButtonItem *)defaultLeftItemWithTarget:(id)target action:(SEL)action
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *image = [UIImage imageNamed:@"back_black"];
+    UIImage *image = [UIImage imageNamed:@"back_white"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [button setBackgroundImage:image forState:UIControlStateNormal];
     [button setBackgroundImage:image forState:UIControlStateHighlighted];

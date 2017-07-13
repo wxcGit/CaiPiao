@@ -11,7 +11,7 @@ pod 'UMeng'
 pod 'SVProgressHUD'
 pod 'BmobSDK'
 pod 'JPush'
-
+pod 'baiduMap'
 
 end
 

@@ -8,7 +8,7 @@
 
 #import "CPBaseViewController.h"
 
-@interface CPBaseTableViewController : CPBaseViewController
+@interface CPBaseTableViewController : CPBaseViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong, readonly) UITableView *tableView;
 

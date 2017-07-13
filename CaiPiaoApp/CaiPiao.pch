@@ -23,6 +23,8 @@
 #import "UIColor+theme.h"
 #import "TKDefines.h"
 #import "FADefines.h"
+#import "UIView+Utils.h"
+#import "UIBarButtonItem+Navigation.h"
 #import <JSONAPI.h>
 
 #endif //__OBJC__

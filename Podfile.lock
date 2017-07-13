@@ -20,7 +20,8 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - BmobSDK (2.2.0):
+  - baiduMap (2.8.1)
+  - BmobSDK (2.2.1):
     - WechatOpenSDK (~> 1.7.7)
   - JCore (1.1.5)
   - JPush (3.0.6):
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.3)
+  - baiduMap
   - BmobSDK
   - JPush
   - JSONModel
@@ -46,7 +48,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  BmobSDK: d2f705187e7baafc89dea0c4ba3953549aae4625
+  baiduMap: 3529560fb1a6cb3ccdf6b21db16c6c86b0cfef70
+  BmobSDK: 952f0ca736deae9d1b6591d72337df7d9072d4f2
   JCore: 9bd9c770c877c583d98b90a68792b8361974c231
   JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
@@ -56,6 +59,6 @@ SPEC CHECKSUMS:
   UMeng: a4fe3231efeb223015d9649e92538dd16a92685f
   WechatOpenSDK: ad1e7be1b66416df847ac50830c798b70c9e365e
 
-PODFILE CHECKSUM: beff1e6ac343107e93c0307d3126ad186c8ea927
+PODFILE CHECKSUM: 2b5df3ebf5c8fc36d5b512aef15a017804baaed0
 
 COCOAPODS: 1.2.1

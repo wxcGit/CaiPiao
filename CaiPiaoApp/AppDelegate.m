@@ -14,13 +14,18 @@
 #import "ViewController.h"
 #import "H5ViewController.h"
 #import <SVProgressHUD.h>
+#import <BaiduMapAPI/BMKMapManager.h>
 
 #define KBmobKey @"a2fab2b62bf31a1e065eccb01107da46"
 #define kUmengAppKey    @"59436cbcb27b0a4fee0004fa"
 #define kJPushAppKey    @"81406cba25cbb69255e6ade3"
 #define kJPushChannel @"http://read.mhxzhkl.com"
 
+#define kBaiduMapKey @"gOYxLT0lGunKGSSPaCLvyDA7UvUGtE3i"
+
 @interface AppDelegate ()<JPUSHRegisterDelegate>
+
+@property (nonatomic, strong) BMKMapManager *mapManeger;
 
 @end
 
@@ -30,7 +35,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self regitsterAll:launchOptions];
     //配置rooterView
-    [self setupRootVc];
+    
+    ViewController * tabbarVC = [[ViewController alloc] init];
+    self.window.rootViewController = tabbarVC;
+//    [self setupRootVc];
     return YES;
 }
 
@@ -94,6 +102,9 @@
     //友盟
     [MobClick startWithAppkey:kUmengAppKey];
     [MobClick updateOnlineConfig];
+    
+    _mapManeger = [[BMKMapManager alloc]init];
+    [_mapManeger start:kBaiduMapKey generalDelegate:nil];
     
 }
 

@@ -104,8 +104,10 @@
     [MobClick updateOnlineConfig];
     
     _mapManeger = [[BMKMapManager alloc]init];
-    [_mapManeger start:kBaiduMapKey generalDelegate:nil];
-    
+    BOOL result = [_mapManeger start:kBaiduMapKey generalDelegate:nil];
+    if (result) {
+        NSLog(@"百度地图注册成功");
+    }
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {

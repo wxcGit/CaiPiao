@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaiPiaoApp/Page/Map/Controller/CPMapViewController.m"
-            timestampString = "521641586.75174"
+            timestampString = "521720618.405637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-didUpdateUserHeading:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaiPiaoApp/Page/Map/Controller/CPMapViewController.m"
-            timestampString = "521643115.811443"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-didFailToLocateUserWithError:"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "-onGetPoiDetailResult:result:errorCode:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

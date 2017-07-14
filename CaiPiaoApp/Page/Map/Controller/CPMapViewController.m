@@ -9,12 +9,16 @@
 #import "CPMapViewController.h"
 #import <BaiduMapAPI/BMKMapView.h>
 #import <BaiduMapAPI/BMKLocationService.h>
+#import <BaiduMapAPI/BMKPoiSearch.h>
+#import <BaiduMapAPI/BMKPointAnnotation.h>
+#import <BaiduMapAPI/BMKGeoCodeSearch.h>
 
-@interface CPMapViewController ()<BMKMapViewDelegate, BMKLocationServiceDelegate>
+@interface CPMapViewController ()<BMKMapViewDelegate, BMKLocationServiceDelegate, BMKPoiSearchDelegate,BMKGeoCodeSearchDelegate>
 
 @property (nonatomic, strong) BMKMapView *mapView;
 @property (nonatomic, strong) BMKLocationService *service;
 @property (nonatomic, strong) BMKUserLocation *currentLocation;
+@property (nonatomic, strong) BMKPoiSearch *search;
 
 @end
 
@@ -25,6 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.mapView];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem creatItemWithTarget:self action:@selector(rightAction) title:@"彩票站"];
     [self startLocation];
 }
 
@@ -33,9 +38,22 @@
     if (!_mapView) {
         _mapView = [[BMKMapView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT)];
         _mapView.showsUserLocation = YES;
+        [_mapView setMapType:BMKMapTypeStandard];
+        [_mapView setZoomLevel:16];
+        _mapView.isSelectedAnnotationViewFront = YES;
     }
     
     return _mapView;
+}
+
+- (BMKPoiSearch*)search
+{
+    if (!_search) {
+        _search = [[BMKPoiSearch alloc]init];
+        _search.delegate = self;
+    }
+    
+    return _search;
 }
 
 - (void)startLocation
@@ -50,8 +68,7 @@
  */
 - (void)didUpdateUserHeading:(BMKUserLocation *)userLocation
 {
-    _currentLocation = userLocation;
-    [_mapView updateLocationData:userLocation];
+    [self updateLocation:userLocation];
 }
 
 /**
@@ -60,17 +77,19 @@
  */
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
 {
-    _currentLocation = userLocation;
-    [_mapView updateLocationData:userLocation];
+    [self updateLocation:userLocation];
 }
 
-/**
- *定位失败后，会调用此函数
- *@param error 错误号
- */
-- (void)didFailToLocateUserWithError:(NSError *)error
+- (void)updateLocation:(BMKUserLocation *)userLocation
 {
+    CLLocationCoordinate2D currentCenterCoor = _currentLocation.location.coordinate;
+    CLLocationCoordinate2D centerCoor = userLocation.location.coordinate;
     
+    if (currentCenterCoor.latitude != centerCoor.latitude || currentCenterCoor.longitude != centerCoor.longitude) {
+        _currentLocation = userLocation;
+        [_mapView updateLocationData:userLocation];
+        _mapView.centerCoordinate = centerCoor;
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -85,6 +104,71 @@
     [super viewDidDisappear:animated];
     [_mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
+}
+
+- (void)rightAction
+{
+    BMKNearbySearchOption *option = [[BMKNearbySearchOption alloc]init];
+    option.location = _currentLocation.location.coordinate;
+    option.radius = 1000000;
+    option.keyword = @"彩票";
+    option.sortType = BMK_POI_SORT_BY_DISTANCE;
+    [self.search poiSearchNearBy:option];
+}
+
+/**
+ *返回POI搜索结果
+ *@param searcher 搜索对象
+ *@param poiResult 搜索结果列表
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiResult:(BMKPoiSearch*)searcher result:(BMKPoiResult*)poiResult errorCode:(BMKSearchErrorCode)errorCode
+{
+    if (errorCode == BMK_SEARCH_NO_ERROR) {
+        NSArray* array = [NSArray arrayWithArray:_mapView.annotations];
+        [_mapView removeAnnotations:array];
+        array = [NSArray arrayWithArray:_mapView.overlays];
+        [_mapView removeOverlays:array];
+        
+        //在此处理正常结果
+        for (int i = 0; i < poiResult.poiInfoList.count; i++)
+        {
+            BMKPoiInfo* poi = [poiResult.poiInfoList objectAtIndex:i];
+            [self addAnimatedAnnotationWithName:poi.name withAddress:poi.pt];
+            
+            //逆地理编码
+            BMKGeoCodeSearch *_geoCodeSearch = [[BMKGeoCodeSearch alloc]init];
+            _geoCodeSearch.delegate = self;
+            //初始化逆地理编码类
+            BMKReverseGeoCodeOption *reverseGeoCodeOption= [[BMKReverseGeoCodeOption alloc] init];
+            //需要逆地理编码的坐标位置
+            reverseGeoCodeOption.reverseGeoPoint = poi.pt;
+            [_geoCodeSearch reverseGeoCode:reverseGeoCodeOption];
+        }
+
+    }
+}
+
+// 添加动画Annotation
+- (void)addAnimatedAnnotationWithName:(NSString *)name withAddress:(CLLocationCoordinate2D)coor {
+    
+    BMKPointAnnotation*animatedAnnotation = [[BMKPointAnnotation alloc]init];
+    animatedAnnotation.coordinate = coor;
+    animatedAnnotation.title = name;
+    [_mapView addAnnotation:animatedAnnotation];
+    
+}
+
+
+/**
+ *返回POI详情搜索结果
+ *@param searcher 搜索对象
+ *@param poiDetailResult 详情搜索结果
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiDetailResult:(BMKPoiSearch*)searcher result:(BMKPoiDetailResult*)poiDetailResult errorCode:(BMKSearchErrorCode)errorCode
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {
